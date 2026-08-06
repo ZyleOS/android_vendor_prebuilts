@@ -8,7 +8,7 @@ The prebuilts are in the form of apk files and are placed in the vendor/prebuilt
 To Include Moto Calculator:
 --------------------------
 
-Add the following line to your device's superior_device.mk file:
+Add the following line to your device's zyle_device.mk file:
 `
 USE_MOTO_CALCULATOR := true
 `
@@ -20,7 +20,7 @@ USE_MOTO_CALCULATOR := true
 To Include DuckDuckGo:
 ----------------------
 
-Add the following line to your device's superior_device.mk file:
+Add the following line to your device's zyle_device.mk file:
 `
 USE_DUCKDUCKGO := true
 `
@@ -31,10 +31,10 @@ USE_DUCKDUCKGO := true
 To Include DotGallery:
 ---------------------
 
-Add the following line to your device's superior_device.mk file:
+Add the following line to your device's zyle_device.mk file:
 `
 USE_DOTGALLERY := true
 `
 <p align="center">
-<img src="https://github.com/SuperiorOS/android_vendor_prebuilts/assets/29405483/18d951d0-5bb7-4340-9760-4ee1b2f3873f" />
+<img src="https://github.com/ZyleOS/android_vendor_prebuilts/assets/29405483/18d951d0-5bb7-4340-9760-4ee1b2f3873f" />
 </p>

@@ -1,4 +1,4 @@
-# Copyright (C) 2023 The SuperiorOS Project
+# Copyright (C) 2023 The ZyleOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -13,10 +13,10 @@
 PRODUCT_COPY_FILES += \
     vendor/prebuilts/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/prebuilts/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/prebuilts/common/bin/50-superior.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-superior.sh
+    vendor/prebuilts/common/bin/50-zyle.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-zyle.sh
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/addon.d/50-superior.sh
+    system/addon.d/50-zyle.sh
 
 ifneq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
 PRODUCT_COPY_FILES += \
@@ -37,12 +37,12 @@ endif
 
 # Cloned app exemption
 PRODUCT_COPY_FILES += \
-    vendor/prebuilts/common/etc/sysconfig/preinstalled-packages-platform-superior-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-superior-product.xml
+    vendor/prebuilts/common/etc/sysconfig/preinstalled-packages-platform-zyle-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-zyle-product.xml
 
 # init file
 PRODUCT_COPY_FILES += \
-    vendor/prebuilts/common/etc/init/init.superior-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.superior-system_ext.rc \
-    vendor/prebuilts/common/etc/init/init.superior-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.superior-updater.rc \
+    vendor/prebuilts/common/etc/init/init.zyle-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.zyle-system_ext.rc \
+    vendor/prebuilts/common/etc/init/init.zyle-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.zyle-updater.rc \
     vendor/prebuilts/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
 #Audio

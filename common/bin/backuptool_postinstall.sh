@@ -1,6 +1,6 @@
 #!/system/bin/sh
 #
-# SuperiorOS A/B OTA Postinstall Script
+# ZyleOS A/B OTA Postinstall Script
 #
 
 /postinstall/system/bin/backuptool_ab.sh backup
